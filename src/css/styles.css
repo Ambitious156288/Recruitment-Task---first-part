@@ -1,9 +1,17 @@
 @import "./reset.css";
 
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #03adfd;
+  --red: #ff0022;
+  --gray: #2e2e2e;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 25px;
-  background-color: #000;
+  background-color: var(--black);
 }
