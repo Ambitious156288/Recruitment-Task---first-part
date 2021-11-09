@@ -19,3 +19,34 @@ body {
   padding: 8px 25px;
   background-color: var(--black);
 }
+
+.search {
+  display: flex;
+}
+
+.search__input {
+  min-width: 280px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.search__btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+
+.search__btn__img {
+  margin: 0 5px;
+}
