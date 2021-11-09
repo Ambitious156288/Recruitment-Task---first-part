@@ -8,6 +8,10 @@
   --gray: #2e2e2e;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .header {
   display: flex;
   align-items: center;
