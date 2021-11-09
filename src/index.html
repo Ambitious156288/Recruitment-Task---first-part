@@ -15,59 +15,61 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__left">
-        <img class="logo" src="./images/logo.png" />
+      <div class="header_wrapper">
+        <div class="header__wrapper__left">
+          <img class="logo" src="./images/logo.png" />
 
-        <div class="search">
-          <input
-            class="search__input"
-            type="text"
-            placeholder="Wpisz nazwę części"
-          />
-          <button class="search__btn">
+          <div class="search">
+            <input
+              class="search__input"
+              type="text"
+              placeholder="Wpisz nazwę części"
+            />
+            <button class="search__btn">
+              <img
+                class="search__btn__img"
+                src="./images/searchIcon.png"
+                alt="search icon"
+              />Szukaj
+            </button>
+          </div>
+
+          <button class="category">
+            Przeglądaj kategorie
             <img
-              class="search__btn__img"
-              src="./images/searchIcon.png"
-              alt="search icon"
-            />Szukaj
+              class="category__arrow"
+              src="./images/arrow.png"
+              alt="arrow icon"
+            />
           </button>
         </div>
 
-        <button class="category">
-          Przeglądaj kategorie
+        <div class="header__wrapper__right">
+          <button class="sell">
+            <img class="sell_btn" src="./images/sell.png" alt="sell icon" />
+            Sprzedaj
+          </button>
+        </div>
+      </div>
+
+      <div class="avatar">
+        <div class="avatar__wrapper">
           <img
-            class="category__arrow"
-            src="./images/arrow.png"
-            alt="arrow icon"
+            class="avatar__wrapper__img"
+            src="./images/avatar.png"
+            alt="avatar icon"
           />
-        </button>
+        </div>
+        <img class="avatar__icon" src="./images/arrow.png" alt="menu icon" />
       </div>
 
-      <div class="header__right">
-        <button class="sell">
-          <img class="sell_btn" src="./images/sell.png" alt="sell icon" />
-          Sprzedaj
-        </button>
-
-        <div class="avatar">
-          <div class="avatar__wrapper">
-            <img
-              class="avatar__wrapper__img"
-              src="./images/avatar.png"
-              alt="avatar icon"
-            />
-          </div>
-          <img class="avatar__icon" src="./images/arrow.png" alt="menu icon" />
-        </div>
-
-        <div class="menu">
-          <nav>
-            <ul>
-              <li></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <!-- <div class="menu">
+        <nav>
+          <ul>
+            <li></li>
+          </ul>
+        </nav>
+      </div> -->
     </header>
 
     <script src="./app.ts"></script>

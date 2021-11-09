@@ -6,6 +6,7 @@
   --blue: #03adfd;
   --red: #ff0022;
   --gray: #2e2e2e;
+  --light-gray: #545454;
 }
 
 body {
@@ -16,13 +17,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 25px;
   background-color: var(--black);
 }
 
-.header__left {
+.header_wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 10px 25px;
+}
+
+.header__wrapper__left {
+  display: flex;
+}
+
+.header__wrapper__right {
+  display: flex;
 }
 
 .logo {
@@ -72,12 +83,6 @@ body {
   margin-left: 7px;
 }
 
-.header__right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .sell {
   display: flex;
   justify-content: center;
@@ -98,6 +103,8 @@ body {
 .avatar {
   display: flex;
   align-items: center;
+  align-self: stretch;
+  background-color: var(--gray);
 }
 
 .avatar__wrapper {
@@ -108,7 +115,7 @@ body {
   height: 45px;
   margin: 0 12px;
   border-radius: 50%;
-  background-color: red;
+  background-color: var(--light-gray);
 }
 
 .avatar__wrapper__img {
@@ -116,4 +123,6 @@ body {
 }
 
 .avatar__icon {
+  display: flex;
+  margin-right: 12px;
 }
