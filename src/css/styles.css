@@ -129,8 +129,7 @@ body {
 }
 
 .menu {
-  /* display: none; */
-  /* display: flex; */
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 50px;
@@ -139,6 +138,10 @@ body {
   padding: 10px 30px;
   background-color: var(--gray);
   z-index: -1;
+}
+
+.menu--active {
+  display: flex;
 }
 
 .menu__item {
