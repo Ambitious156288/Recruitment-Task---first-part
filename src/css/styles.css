@@ -220,6 +220,26 @@ body {
   display: flex;
 }
 
+.menu-mobile {
+  display: none;
+  align-items: center;
+}
+
+.menu-mobile__sell {
+  font-size: 15px;
+  padding: 7px 40px;
+}
+
+.menu-mobile__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px 25px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1160px) {
   .search {
     display: none;
@@ -227,5 +247,41 @@ body {
 
   .search-laptop {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .search-laptop {
+    display: none;
+  }
+
+  .category {
+    display: none;
+  }
+
+  .avatar__icon {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+  }
+  .sell-desktop {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .menu__item--divider {
+    padding-bottom: 25px;
+  }
+
+  .menu__item__link {
+    padding-top: 20px;
   }
 }
