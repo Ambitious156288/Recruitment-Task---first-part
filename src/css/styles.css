@@ -240,6 +240,48 @@ body {
   cursor: pointer;
 }
 
+.search-mobile {
+  display: none;
+}
+
+.search-mobile__input {
+  display: none;
+  min-width: 150px;
+  width: 75vw;
+}
+
+.search-mobile__input--active {
+  display: flex;
+}
+
+.search-mobile__btn {
+  border-radius: 8px;
+  width: 50px;
+  justify-content: center;
+}
+
+.search-mobile__btn--change {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.logo--hide {
+  display: none;
+}
+
+.search-close-button {
+  display: none;
+  margin-right: 20px;
+}
+
+.search-close-button--active {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 1160px) {
   .search {
     display: none;
@@ -283,5 +325,9 @@ body {
 
   .menu__item__link {
     padding-top: 20px;
+  }
+
+  .search-mobile {
+    display: flex;
   }
 }
