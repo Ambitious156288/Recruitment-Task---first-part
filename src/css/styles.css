@@ -196,3 +196,36 @@ body {
 .menu__logout__icon {
   margin: 0 10px;
 }
+
+.search-laptop {
+  display: none;
+  margin: 0 30px;
+}
+
+.search-laptop__input {
+  display: none;
+  position: absolute;
+  top: 70px;
+  border-radius: unset;
+  border-bottom: 1px solid var(--red);
+}
+
+.search-laptop__btn {
+  border-radius: 8px;
+  width: 150px;
+  justify-content: center;
+}
+
+.search-laptop--active {
+  display: flex;
+}
+
+@media screen and (max-width: 1160px) {
+  .search {
+    display: none;
+  }
+
+  .search-laptop {
+    display: flex;
+  }
+}
