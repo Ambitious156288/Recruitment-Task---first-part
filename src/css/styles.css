@@ -331,3 +331,24 @@ body {
     display: flex;
   }
 }
+
+@media screen and (max-width: 593px) {
+  .search-mobile__input {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .logo {
+    height: 27px;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .search-mobile__input {
+    width: 53vw;
+  }
+  .menu-mobile__sell {
+    padding: 7px 18px;
+  }
+}
